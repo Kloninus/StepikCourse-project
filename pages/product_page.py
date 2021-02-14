@@ -3,7 +3,6 @@ from .locators import ProductPageLocators
 
 
 class ProductPage(BasePage):
-
     def add_to_basket(self):
         login_link = self.browser.find_element(*ProductPageLocators.BTN_ADD_TO_BASKET)
         login_link.click()
